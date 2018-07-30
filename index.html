@@ -8,154 +8,168 @@
 </head>
 
 <body>
-  <header class="main-header">
-    <div>
-      <a class="header-logo">
-        <img src="" alt="Логотип Седоны">
-      </a>
-    </div>
-    <nav class="main-navigation">
-      <ul class="site-navigation">
-        <li class="site-navigation-info">
-          <a href="#">Информация</a>
-        </li>
-        <li class="site-navigation-photo">
-          <a href="#">Фото и видео</a>
-        </li>
-        <li class="site-navigation-map">
-          <a href="#">Карта штата</a>
-        </li>
-        <li class="site-navigation-hotels">
-          <a href="#">Гостиницы</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <div class="intro">
-      <div class="intro-logo">
-        <img src="" alt="Welcom to the gorgeous Sedona">
+  <div class="container">
+    <header class="main-header">
+      <div>
+        <a class="header-logo">
+          <img src="img/headerlogo.png" width="138" height="70" alt="Логотип Седоны">
+        </a>
       </div>
-    </div>
-
-    <section class="lead">
-      <h1 class="lead-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
-      <p class="lead-descr">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-    </section>
-
-    <section class="advantages">
-      <h2 class="visually-hidden">Преимущества</h2>
-      <ul class="advantages-list">
-        <li class="advantages-item">
-          <div class="advantages-item-container">
-            <h2 class="advantages-item-title_white">Настоящий городок</h2>
-            <p class="advantages-item-number_white">— №1 —</p>
-            <p class="advantages-item-descr_white">Седона - не аттракцион для туристов, там течет своя жизнь</p>
-          </div>
-          <div class="advantages-item-photo_city"></div>
-        </li>
-        <li class="advantages-item">
-          <div class="advantages-item-photo_bridge"></div>
-          <div class="advantages-item-container">
-            <h2 class="advantages-item-title_white">Там есть мост дьявола</h2>
-            <p class="advantages-item-number_white">— №2 —</p>
-            <p class="advantages-item-descr_white">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-          </div>
-        </li>
-        <li class="advantages-item">
-          <ul class="">
-            <li class="">
-              <h3 class="advantages-item-title">Небольшая площядь</h3>
-              <p class="advantages-item-number">— №3 —</p>
-              <p class="advantages-item-descr">Все достопримечательности находятся очень близко</p>
-            </li>
-            <li class="">
-              <h3 class="advantages-item-title">Красивая дорога</h3>
-              <p class="advantages-item-number">— №4 —</p>
-              <p class="advantages-item-descr">Ехать в седону из лас-вегаса совсем не скучно!</p>
-            </li>
-            <li class="">
-              <h3 class="advantages-item-title">Мало туристов</h3>
-              <p class="advantages-item-number">— №5 —</p>
-              <p class="advantages-item-descr">Большинство едет в гранд каньон и толпится там</p>
-            </li>
-          </ul>
-        </li>
-        <li class="advantages-item">
-          <ul class="">
-            <li class="house">
-              <h3 class="advantages-item-title">Жилье</h3>
-              <p class="advantages-item-descr">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-            </li>
-            <li class="food">
-              <h3 class="advantages-item-title">Еда</h3>
-              <p class="advantages-item-descr">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-            </li>
-            <li class="gifts">
-              <h3 class="advantages-item-title">Сувениры</h3>
-              <p class="advantages-item-descr">Не только китайского, но и местного производства!</p>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </section>
-
-    <section class="search">
-      <h2 class="visually-hidden">Поиск</h2>
-      <b class="search-lead">Заинтересовались?</b>
-      <p class="search-descr">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-      <a class="btn-search">Поиск гостиницы в седоне</a>
-      <div class="search-modal">
-        <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-          <div class="search-form-in">
-            <label>Дата заезда:</label>
-            <input type="text">
-          </div>
-          <div class="search-form-out">
-            <label>Дата выезда:</label>
-            <input type="text">
-          </div>
-          <div class="search-form-number">
-            <p class="number-abults">
-              <label>Взрослые:</label>
-              <input type="text">
-            </p>
-            <p class="number-children">
-              <label>Дети:</label>
-              <input type="text">
-            </p>
-          </div>
-          <button type="submit">Найти</button>
-        </form>
-      </div>
-    </section>
-
-    <section class="map">
-      <h2 class="visually-hidden">Карта</h2>
-      <img src="" alt="">
-    </section>
-
-  </main>
-
-  <footer>
-    <ul>
-      <li>
-        <b>#Visitsedona</b>
-      </li>
-      <li>
-        <ul>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
+      <nav class="main-navigation">
+        <ul class="site-navigation">
+          <li class="site-navigation-item site-navigation-info">
+            <a class="site-link" href="#">Информация</a>
+          </li>
+          <li class="site-navigation-item site-navigation-photo">
+            <a class="site-link" href="#">Фото и видео</a>
+          </li>
+          <li class="site-navigation-item site-navigation-map">
+            <a class="site-link" href="#">Карта штата</a>
+          </li>
+          <li class="site-navigation-item site-navigation-hotels">
+            <a class="site-link" href="#">Гостиницы</a>
+          </li>
         </ul>
-      </li>
-      <li>
-        <b>Weesite by</b>
-        <a href="href="https://htmlacademy.ru/intensive/htmlcss""></a>
-      </li>
-    </ul>
-  </footer>
+      </nav>
+    </header>
+    
+    <main>
+      <div class="intro"></div>
+    
+      <section class="lead">
+        <h1 class="lead-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+        <p class="lead-descr">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      </section>
+    
+      <section class="advantages">
+        <h2 class="visually-hidden">Преимущества</h2>
+        <ul class="reasons-list">
+          <li class="reasons-item reasons-item-first">
+            <div class="reasons-item-container">
+              <h2 class="reasons-item-title reasons_white">Настоящий городок</h2>
+              <p class="reasons-item-number reasons_white">— №1 —</p>
+              <p class="reasons-item-descr reasons_white">Седона - не аттракцион для туристов, там течет своя жизнь</p>
+            </div>
+            <div class="reasons-item-photo_city">
+              <img src="img/advantage01.jpg" width="800" height="256" alt="Настоящий городок - Седона">
+            </div>
+          </li>
+          <li class="reasons-item">
+            <div class="reasons-item-photo_bridge">
+              <img src="img/advantage02.jpg" width="800" height="256" alt="Мост Дьявола">
+            </div>
+            <div class="reasons-item-container">
+              <h2 class="reasons-item-title reasons_white reasons_bridge">Там есть мост дьявола</h2>
+              <p class="reasons-item-number reasons_white">— №2 —</p>
+              <p class="reasons-item-descr reasons_white reasons-descr_bridge">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            </div>
+          </li>
+          <li class="reasons-item">
+            <ul class="reasons-list-container features">
+              <li class="features-item">
+                <h3 class="reasons-item-title">Небольшая площядь</h3>
+                <p class="reasons-item-number">— №3 —</p>
+                <p class="reasons-item-descr features-descr">Все достопримечательности находятся очень близко</p>
+              </li>
+              <li class="features-item">
+                <h3 class="reasons-item-title">Красивая дорога</h3>
+                <p class="reasons-item-number">— №4 —</p>
+                <p class="reasons-item-descr">Ехать в седону из лас-вегаса совсем не скучно!</p>
+              </li>
+              <li class="features-item">
+                <h3 class="reasons-item-title">Мало туристов</h3>
+                <p class="reasons-item-number">— №5 —</p>
+                <p class="reasons-item-descr">Большинство едет в гранд каньон и толпится там</p>
+              </li>
+            </ul>
+          </li>
+          <li class="reasons-item reasons-item-extra">
+            <ul class="advantages-list-container">
+              <li class="advantages-item house">
+                <h3 class="reasons-item-title">Жилье</h3>
+                <p class="reasons-item-descr">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+              </li>
+              <li class="advantages-item food">
+                <h3 class="reasons-item-title">Еда</h3>
+                <p class="reasons-item-descr">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              </li>
+              <li class="advantages-item gifts">
+                <h3 class="reasons-item-title">Сувениры</h3>
+                <p class="reasons-item-descr">Не только китайского, но и местного производства!</p>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+    
+      <section class="search">
+        <h2 class="visually-hidden">Поиск отелей по датам</h2>
+        <b class="search-lead">Заинтересовались?</b>
+        <p class="search-descr">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <a class="search-button">Поиск гостиницы в седоне</a>
+        <div class="search-popup">
+          <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+            <div class="search-form-in">
+              <label class="search-form-title">Дата заезда:</label>
+              <input class="search-form-input" type="text" name="in" value="24 Апреля 2017">
+            </div>
+            <div class="search-form-out">
+              <label class="search-form-title">Дата выезда:</label>
+              <input class="search-form-input" type="text" name="out" value="4 июля 2017">
+            </div>
+            <div class="search-form-number">
+              <p class="number-adults">
+                <label class="search-form-title">Взрослые:</label>
+                <input type="text" name="adults">
+              </p>
+              <p class="number-children">
+                <label class="search-form-title">Дети:</label>
+                <input type="text" name="children">
+              </p>
+            </div>
+            <button class="search-form-button" type="submit">Найти</button>
+          </form>
+        </div>
+      </section>
+    
+      <section class="map">
+        <h2 class="visually-hidden">Карта</h2>
+        <img src="img/map.png" width="1200" height="593" alt="Карта Седона">
+      </section>
+    
+    </main>
+    
+    <footer class="main-footer">
+      <ul class="footer-columns">
+        <li class="footer-hash">
+          <b class="footer-hash-text">#Visitsedona</b>
+        </li>
+        <li>
+          <ul class="footer-social">
+            <li>
+              <a href="#">
+                <span class="visually-hidden">Твиттер</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="visually-hidden">Фейсбук</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="visually-hidden">Ютуб</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="footer-website">
+          <b class="footer-website-text">Weesite by</b>
+          <a class="footer-website-link" href="href="https://htmlacademy.ru/intensive/htmlcss""></a>
+        </li>
+      </ul>
+    </footer>
+  </div>
 
 </body>
 </html>
