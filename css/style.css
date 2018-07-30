@@ -256,9 +256,16 @@ a {
   width: 285px;
 }
 
+.search-container {
+  position: relative;
+  width: 568px;
+  margin: 0 auto;
+}
+
 .search-lead {
   display: block;
   margin: 0 auto;
+  margin-bottom: 25px;
   width: 300px;
   font-size: 30px;
   line-height: 36px;
@@ -269,6 +276,7 @@ a {
 .search-descr {
   display: block;
   margin: 0 auto;
+  margin-bottom: 47px;
   width: 460px;
   line-height: 24px;
   font-weight: 300;
@@ -287,6 +295,7 @@ a {
   color: #fff;
   background-color: #766357;
   box-sizing: border-box;
+  cursor: pointer;
 }
 
 .search-button:hover {
@@ -298,15 +307,31 @@ a {
   background-color: #503e33;
 }
 
+.search-popup {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 50px;
+  background-color: #fff;
+}
+
 .search-form-title {
   line-height: 26px;
   font-weight: 600;
 }
 
 .search-form-input {
+  width: 346px;
+  height: 38px;
+  padding: 10px 38px 12px 13px;
+  margin-bottom: 10px;
   line-height: 26px;
   font-weight: 600;
+  background-color: #f2f2f2;
   text-transform: uppercase;
+  border: none;
+  box-sizing: border-box;
 }
 
 .search-form-button {
@@ -332,12 +357,36 @@ a {
   background-color: #5496bd;
 }
 
+.map {
+  width: 1200px;
+  height: 593px;
+  background-image: url("../img/map.png");
+  background-repeat: no-repeat;
+}
+
+.map iframe {
+  border: none;
+}
+
+.main-footer {
+  position: relative;
+  margin-top: -120px;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
 .footer-columns {
   display: flex;
   justify-content: space-between;
+  -ms-align-items: center;
+  align-items: center;
   margin: 0;
-  padding: 0;
+  padding: 36px 0 36px 0;
   list-style: none;
+}
+
+.footer-hash {
+  width: 33.33333%;
+  text-align: center;
 }
 
 .footer-hash-text {
@@ -347,13 +396,60 @@ a {
   font-weight: 600;
 }
 
+.footer-social-container {
+  width: 33.33333%;
+}
+
 .footer-social {
+  display: flex;
+  justify-content: center;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
+.social-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 46px;
+  height: 48px;
+  margin-right: 6px;
+  background-color: #81b3d2;
+}
+
+.social-item:hover {
+  background-color: #669ec0;
+}
+
+.social-item:active {
+  background-color: #5496bd;
+}
+
+.social-item:active path {
+  fill: rgba(0,0,0,0.3);
+}
+
+.footer-website {
+  width: 33.33333%;
+  text-align: center;
+}
+
 .footer-website-text {
+  margin-right: 4px;
   line-height: 26px;
   font-weight: 300;
+}
+
+.footer-website-link:hover path {
+  fill: #81b3d2;
+}
+
+.footer-website-link:active path {
+  fill: #bdbbbc;
+}
+
+.website-svg {
+  display: inline-block;
+  vertical-align: middle;
 }
