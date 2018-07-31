@@ -308,36 +308,137 @@ a {
 }
 
 .search-popup {
-  display: block;
+  display: none;
   position: absolute;
   left: 0;
   right: 0;
-  padding: 50px;
+  padding: 57px;
   background-color: #fff;
 }
 
+.search-popup-show {
+  display: block;
+}
+
+.search-form-calendar {
+  position: relative;
+  display: flex;
+  margin-bottom: 18px;
+}
+
 .search-form-title {
-  line-height: 26px;
+  width: 92px;
+  line-height: 35px;
   font-weight: 600;
 }
 
-.search-form-input {
-  width: 346px;
+.search-calendar-input {
+  width: 343px;
   height: 38px;
   padding: 10px 38px 12px 13px;
+  margin-left: 19px;
   margin-bottom: 10px;
   line-height: 26px;
   font-weight: 600;
   background-color: #f2f2f2;
   text-transform: uppercase;
-  border: none;
+  border: 2px solid #f2f2f2;
   box-sizing: border-box;
+  outline: none;
+}
+
+.search-calendar-input:hover {
+  background-color: #ebebeb;
+  border: 2px solid #ebebeb;
+}
+
+.search-calendar-input:focus {
+  background-color: #fff;
+  border: 2px solid #e5e5e5;
+}
+
+.search-calendar-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 7px;
+  background-color: transparent;
+  border: none;
+}
+
+.search-calendar-button path {
+  fill: #cacaca;
+}
+
+.search-calendar-button:hover path {
+  fill: #000;
+}
+
+.search-calendar-button:active path {
+  fill: #81b3d2;
+}
+
+.search-form-number {
+  display: flex;
+  margin-bottom: 53px;
+}
+
+.number-adults {
+  display: flex;
+  margin: 0;
+}
+
+.search-number-title {
+  width: 92px;
+  margin-right: 18px;
+  line-height: 40px;
+  font-weight: 600;
+}
+
+.number-button {
+  display: block;
+  width: 38px;
+  height: 38px;
+  padding: 0;
+  font-size: 23px;
+  font-weight: 600;
+  color: #a9a9a9;
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.number-button:hover {
+  color: #000;
+  background-color: #ebebeb;
+}
+
+.number-button:focus {
+  color: #81b3d2;
+  background-color: #fff;
+}
+
+.number-input {
+  display: block;
+  width: 21px;
+  height: 38px;
+  padding-left: 17px;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 600;
+  color: #000;
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.number-children {
+  width: 44px;
+  margin-left: 54px;
 }
 
 .search-form-button {
   display: block;
   width: 458px;
-  padding: 20px;
+  padding: 16px;
   font-size: 21px;
   line-height: 26px;
   font-weight: 600;
