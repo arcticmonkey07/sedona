@@ -555,6 +555,18 @@ a {
   vertical-align: middle;
 }
 
+@keyframes shake {
+  0%, 100% {transform: translate(0); opacity: 0;}
+  10%, 30%, 50%, 70%, 90% {transform: translate(-3px);}
+  20%, 40%, 60%, 80% {transform: translate(3px);}
+  100% {opacity: 1;}
+}
+
+.popup-error {
+  animation-name: shake;
+  animation-duration: 0.6s;
+}
+
 
 /*-------------------------------------- Hotels --------------------------------*/
 
@@ -572,6 +584,7 @@ a {
 
 .search-group {
   display: flex;
+  flex-direction: column;
   margin-right: 107px;
   padding: 10px 0 0 10px;
   border: none;
@@ -899,40 +912,26 @@ a {
   background-color: #503e33;
 }
 
+.hotel-rating {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
 .stars {
-  position: relative;
-  width: 107px;
-  height: 17px;
-  margin-bottom: 45px;
-  background-image: url("../img/icon-star.svg");
+  margin-right: 4px;
+  margin-bottom: 39px;
 }
 
-.stars::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0px;
-  height: 17px;
-  background-color: #fff;
-}
-
-.stars[data-rating="4"]::after {
-  width: 23px;
-}
-
-.stars[data-rating="3"]::after {
-  width: 42px;
-}
-
-.stars[data-rating="2"]::after {
-  width: 63px;
+.star-svg {
+  margin-left: 3px;
 }
 
 .rating-number {
   display: inline-block;
   width: 110px;
-  padding: 4px 5px 4px 0;
+  margin-right: 5px;
+  padding: 4px 0px 4px 0;
   text-align: center;
   vertical-align: middle;
   color: #666666;
